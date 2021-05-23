@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset=" utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section>
+
+        <nav>
+            <div class="divNavPc">
+                <div class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="divTitleTop">
+                        <a class="navbar-brand" href="#">BRAWLHALLA</a>
+                    </div>
+                    <div class="container-fluid">
+                        <img src="img/braw.jpg" style="width:10%;">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Fotos</a>
+                        <a class="nav-link" href="#">Destaques</a>
+                        <div class="text-end  divTitleBotton">
+                            <a class="navbar-brand" href="#">BRAWLHALLA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <header>
+            <div class="divBtn">
+                <img src="img/Prod_Brawlhalla.jpg" alt="" width="100%"
+                    class="d-inline-block align-text-top img-wrapper">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Entrar</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="divColor">
+                <div class="container divContainer">
+                    <img src="img/mobile.jpg" class="divImgMobile">
+
+                    <div class="divBoard"></div>
+
+                    <p class="lead divTextMain">An epic platform fighter for up to 8 players online or local. Try casual
+                        free-for-alls, ranked matches, or invite friends to a private room. And it's free! Play
+                        cross-platform with millions of players on PlayStation, Xbox, Nintendo Switch, iOS,
+                        Android & Steam! Frequent updates. Over fifty Legends.
+                    </p>
+
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div class="container">
+                <div class="row divRow">
+                    <div class="col-9">
+                        <p>ake way for a new Mallhalla update! This patch introduces new Skins for Orion and Lin
+                            Fei, a
+                            brand new Sidekick, Emote, and five highly requested country flag Avatars. Get out the
+                            sun
+                            block lotion because the hottest Heatwave summer event in Valhalla is making a...</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="img/newItem.jpg" class="divImg" width="100%">
+                    </div>
+                </div>
+
+                <div class="row divRow">
+                    <div class="col-9">
+                        <p>This past Monday, a whole bunch of Esports Announcements were made on the Esports Dev Stream!
+                            The Brawlhalla Summer Championship 2021 is now open for registration, the Parsec
+                            Invitational for EU and NA will be streamed at the beginning of June, and the Esports
+                            Color...</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="img/newColor.jpg" class="divImg" width="100%">
+                    </div>
+                </div>
+
+                <div class="row divRow">
+                    <div class="col-9">
+                        <p>Outlaws of the galaxy beware! Reno, the Chitnoid Bounty Hunter makes his free-to-play Legend
+                            Rotation debut today. That means that you can now play as everyone’s favorite alien bug
+                            cowboy for free from now until May 18th. This week’s Brawl of the Week is Brawlball...</p>
+                    </div>
+                    <div class="col-3">
+                        <img src="img/newLegend.jpg" class="divImg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <article>
+            </div>
+            </div>
+            <div class="container">
+                <p class="lead display-6">Play locally with friends, fight in chaotic Free-For-All matches online and
+                    offline, team up for 2v2 battles, or climb the Ranked ladder to Platinum and beyond. There’s a
+                    little something for everyone.
+
+                    If you’re looking to unwind with friends, or if you’re aiming to carve your name into the pillars of
+                    the Brawlhalla Power Rankings, you can play Brawlhalla however and whenever you want.</p>
+            </div>
+        </article>
+    </section>
+</body>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Dados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" class="form-control">
+
+                    <label for="email">SobreNome</label>
+                    <input type="text" id="email" class="form-control">
+
+                    <input type="submit" onclick="inf()">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+
+<script>
+    function inf() {
+        var person = new Object()
+        person.name = document.getElementById("name").value
+        person.email = document.getElementById("email").value
+
+        alert("Nome: " + person.name + "\n" + "E-mail: " + person.email)
+    }
+</script>
